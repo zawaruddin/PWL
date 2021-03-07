@@ -41,6 +41,7 @@ class HomeController extends Controller
                     <li>HP</li>
                     <li>Dell</li>
                     <li>Acer</li>
+                    <li>MSI</li>
                 </ul>';
     }
 }
