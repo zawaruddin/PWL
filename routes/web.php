@@ -19,3 +19,8 @@ Route::prefix('user')->group(function(){
     Route::get('/name/{user}', [HomeController::class, 'userByUsername']);
     Route::get('/id/{id}', [HomeController::class, 'userByUserID']);
 });
+
+Route::prefix('product')->group(function(){
+    Route::get('/smartphone', [HomeController::class, 'getSmartphone']);
+    Route::get('/laptop', [HomeController::class, 'getLaptop']);
+});
