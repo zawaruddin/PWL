@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,5 @@ Route::prefix('product')->group(function(){
     Route::get('/smartphone', [HomeController::class, 'getSmartphone']);
     Route::get('/laptop', [HomeController::class, 'getLaptop']);
 });
+
+Route::get('/artikel', [ArtikelController::class, 'index']);
